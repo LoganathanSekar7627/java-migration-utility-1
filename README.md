@@ -8,7 +8,7 @@ Use this utility that will be useful in making
 Refer file for the [text_changes.py](text_changes.py) done in the utility.  This needs python 3.
 
 ## Steps
-1. Configure the migration_config.py with correct `git_base_dir` and `modules_paths_list_in_order`.
+1. Configure the [migration_config.py](migration_config.py) with correct `git_base_dir` and `modules_paths_list_in_order`.
 2. Run command to apply the textual changes mentioned.
 ````
 python java-migration-utility.py --migrate
