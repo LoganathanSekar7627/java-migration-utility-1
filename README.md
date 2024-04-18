@@ -1,2 +1,2 @@
 # java-migration-utility
-Java Migration utility from Java 11 to Java 21
+Utility helping developers in migrating java version of MOSIP modules from Java-11 to Java-21
