@@ -8,24 +8,22 @@ import pom_migrator
 
 parser=argparse.ArgumentParser()
 
-parser.add_argument("--mvnCleanInstall", "-mci", help="Maven Clean Install", nargs='?', const="True")
-parser.add_argument("--mvnCleanInstallSkipTests", "-mcist", help="Maven Clean Install with Skip tests and javadoc in build", nargs='?', const="True")
 parser.add_argument("--gitBaseDir", "-gbd", help="Git Base Directory", default=None)
-parser.add_argument("--addCommitAndPushToOrigin", "-acp", help="Add changes, commit and push to origin", nargs='?', const="True")
-parser.add_argument("--fetchMerge", "-fm", help="Fetch upstream and merge develop-java21 branch", nargs='?', const="True")
-parser.add_argument("--add", "-ad", help="Add changes", nargs='?', const="True")
-parser.add_argument("--commit", "-cm", help="Commit", nargs='?', const="True")
-parser.add_argument("--pushToOrigin", "-po", help="push to origin", nargs='?', const="True")
-parser.add_argument("--commitMessage", "-m", help="Commit and push to origin", default='Committing changes.')
 parser.add_argument("--listModules", "-lsm", help="List Modules", nargs='?', const="True")
 parser.add_argument("--listGitRepos", "-lsr", help="List Git Repos", nargs='?', const="True")
 parser.add_argument("--startIndex", "-si", help="The start index of module from which build to start", default=1, nargs='?', const="True")
 parser.add_argument("--index", "-i", help="The index of module from which specifically needs to be built", default=None, nargs='?', const="True")
 parser.add_argument("--migrate", "-mig", help="Migrate", nargs='?', const="True")
-
+parser.add_argument("--fetchMerge", "-fm", help="Fetch upstream and merge develop-java21 branch", nargs='?', const="True")
 parser.add_argument("--status", "-st", help="git status on all modules", nargs='?', const="True")
-
 parser.add_argument("--diff", "-df", help="git diff on all modules", nargs='?', const="True")
+parser.add_argument("--mvnCleanInstall", "-mci", help="Maven Clean Install", nargs='?', const="True")
+parser.add_argument("--mvnCleanInstallSkipTests", "-mcist", help="Maven Clean Install with Skip tests and javadoc in build", nargs='?', const="True")
+parser.add_argument("--addCommitAndPushToOrigin", "-acp", help="Add changes, commit and push to origin", nargs='?', const="True")
+parser.add_argument("--add", "-ad", help="Add changes", nargs='?', const="True")
+parser.add_argument("--commit", "-cm", help="Commit", nargs='?', const="True")
+parser.add_argument("--commitMessage", "-m", help="Commit and push to origin", default='Committing changes.')
+parser.add_argument("--pushToOrigin", "-po", help="push to origin", nargs='?', const="True")
 
 
 
